@@ -16,6 +16,7 @@ namespace Arv
             _species = species;
             _diet = diet;
             _speed = speed;
+            _hunger = 20;
         }
         public void ChangeColor(Color color)
         {

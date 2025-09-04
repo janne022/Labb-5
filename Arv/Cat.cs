@@ -16,6 +16,7 @@ namespace Arv
             _diet = diet;
             _speed = speed;
             _isLitterBoxTrained = isLitterBoxTrained;
+            _hunger = 20;
         }
         public void Purr()
         {

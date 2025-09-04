@@ -13,6 +13,8 @@ namespace Arv
         protected string ?_diet { get; set; }
         protected int _speed { get; set; }
 
+        public int _hunger { get; set; }
+
         public abstract void MakeSound();
         public void DisplayInfo()
         {
@@ -22,10 +24,10 @@ namespace Arv
         {
             System.Console.WriteLine("Sleeping");
         }
-        //TODO: make hunger instead of speed
-        public void Eat()
+        //TODO: Set base hunger from Animal and then use a thread to tick up food. Make it so that hunger can't go below 0
+        public void Eat(Food food)
         {
-
+            _hunger -= food._saturation;
         }
     }
 }
