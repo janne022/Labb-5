@@ -7,18 +7,18 @@ namespace Arv
 {
     public abstract class Animal
     {
-        protected int _age { get; set; }
-        protected int _weight { get; set; }
-        protected string ?_species { get; set; }
-        protected string ?_diet { get; set; }
-        protected int _speed { get; set; }
+        protected int Age { get; set; }
+        protected int Weight { get; set; }
+        protected string ?Species { get; set; }
+        protected string ?Diet { get; set; }
+        protected int Speed { get; set; }
 
-        public int _hunger { get; set; }
+        public int Hunger { get; set; }
 
         public abstract void MakeSound();
         public void DisplayInfo()
         {
-            System.Console.WriteLine($"Age: {_age}\nWeight:{_weight}\nSpecies:{_species}\nDiet:{_diet}\nSpeed:{_speed}");
+            System.Console.WriteLine($"Age: {Age}\nWeight:{Weight}\nSpecies:{Species}\nDiet:{Diet}\nSpeed:{Speed}");
         }
         public void Sleep()
         {
@@ -27,7 +27,7 @@ namespace Arv
         //TODO: Set base hunger from Animal and then use a thread to tick up food. Make it so that hunger can't go below 0
         public void Eat(Food food)
         {
-            _hunger -= food._saturation;
+            Hunger -= food.Saturation;
         }
     }
 }

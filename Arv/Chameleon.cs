@@ -11,12 +11,12 @@ namespace Arv
         Color _color;
         public Chameleon(int age, int weight, string species, string diet, int speed)
         {
-            _age = age;
-            _weight = weight;
-            _species = species;
-            _diet = diet;
-            _speed = speed;
-            _hunger = 20;
+            Age = age;
+            Weight = weight;
+            Species = species;
+            Diet = diet;
+            Speed = speed;
+            Hunger = 20;
         }
         public void ChangeColor(Color color)
         {

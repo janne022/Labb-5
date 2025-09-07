@@ -9,8 +9,8 @@ namespace Arv
     {
         public DogFood()
         {
-            _name = "Dog Food";
-            _saturation = 10;
+            Name = "Dog Food";
+            Saturation = 10;
         }
     }
 }

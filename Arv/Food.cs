@@ -7,7 +7,7 @@ namespace Arv
 {
     public abstract class Food
     {
-        public string ?_name { get; set; }
-        public int _saturation { get; set; }
+        public string ?Name { get; set; }
+        public int Saturation { get; set; }
     }
 }

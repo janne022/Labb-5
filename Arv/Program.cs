@@ -12,6 +12,6 @@ cat.MakeSound();
 chameleon.MakeSound();
 chameleon.ChangeColor(color: Color.White);
 
-System.Console.WriteLine(bulldog._hunger);
+System.Console.WriteLine(bulldog.Hunger);
 bulldog.Eat(new DogFood());
-System.Console.WriteLine(bulldog._hunger);
+System.Console.WriteLine(bulldog.Hunger);

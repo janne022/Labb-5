@@ -10,13 +10,13 @@ namespace Arv
         private bool _isLitterBoxTrained;
         public Cat(int age, int weight, string species, string diet, int speed, bool isLitterBoxTrained)
         {
-            _age = age;
-            _weight = weight;
-            _species = species;
-            _diet = diet;
-            _speed = speed;
+            Age = age;
+            Weight = weight;
+            Species = species;
+            Diet = diet;
+            Speed = speed;
             _isLitterBoxTrained = isLitterBoxTrained;
-            _hunger = 20;
+            Hunger = 20;
         }
         public void Purr()
         {
