@@ -7,6 +7,7 @@ namespace Arv
 {
     public class Cat : Animal
     {
+        // Defines properties and constructor for Cat class
         private bool _isLitterBoxTrained;
         public Cat(int age, int weight, int speed, bool isLitterBoxTrained)
         {
@@ -18,7 +19,7 @@ namespace Arv
             _isLitterBoxTrained = isLitterBoxTrained;
             Hunger = 20;
         }
-        public void Purr()
+        public static void Purr()
         {
             System.Console.WriteLine("prrrrrrr");
         }

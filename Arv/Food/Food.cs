@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 
 namespace Arv
 {
+    // Abstract class for food that animals can eat
     public abstract class Food
     {
-        public string ?Name { get; set; }
+        public string? Name { get; set; }
         public int Saturation { get; set; }
     }
 }

@@ -8,6 +8,7 @@ namespace Arv
 {
     public class Chameleon : Animal
     {
+        // Defines properties and constructor for Chameleon class
         private Color _color;
         public Chameleon(int age, int weight, int speed)
         {

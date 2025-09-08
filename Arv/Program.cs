@@ -5,11 +5,13 @@ internal class Program
 {
     private static void Main(string[] args)
     {
+        // Initiate animals
         Bulldog bulldog = new(age: 2, weight: 10, speed: 20);
         Retriever retriever = new(age: 6, weight: 10, speed: 56);
         Cat cat = new(age: 2, weight: 10, speed: 40, isLitterBoxTrained: true);
         Chameleon chameleon = new(age: 1, weight: 2, speed: 5);
 
+        // Try out methods
         bulldog.MakeSound();
         retriever.MakeSound();
         cat.MakeSound();

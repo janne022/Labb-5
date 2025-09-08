@@ -15,7 +15,7 @@ namespace Arv
         protected int Speed { get; set; }
 
         public int Hunger { get; set; } = 20;
-
+        // Abstract method that must be implemented and makes animal sound
         public abstract void MakeSound();
         public void DisplayInfo()
         {
@@ -25,12 +25,12 @@ namespace Arv
         {
             System.Console.WriteLine("Sleeping");
         }
-        //TODO: Set base hunger from Animal and then use a thread to tick up food. Make it so that hunger can't go below 0
+        // Method for eating food, checks if food matches diet, can't go below 0 hunger
         public void Eat(Food food)
         {
             if (food.Name != null && food.Name.Equals(Diet))
             {
-                Hunger -= food.Saturation;
+                Hunger = Math.Max(0, Hunger - food.Saturation);
             }
             else
             {

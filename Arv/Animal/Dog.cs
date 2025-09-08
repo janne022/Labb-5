@@ -7,6 +7,7 @@ namespace Arv
 {
     public class Dog : Animal
     {
+        // Defines properties and constructor for Dog class
 
         public Dog(int age, int weight, int speed)
         {
