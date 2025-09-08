@@ -8,12 +8,12 @@ namespace Arv
     public class Cat : Animal
     {
         private bool _isLitterBoxTrained;
-        public Cat(int age, int weight, string species, string diet, int speed, bool isLitterBoxTrained)
+        public Cat(int age, int weight, int speed, bool isLitterBoxTrained)
         {
             Age = age;
             Weight = weight;
-            Species = species;
-            Diet = diet;
+            Species = "Felidae";
+            Diet = "Canned Tuna";
             Speed = speed;
             _isLitterBoxTrained = isLitterBoxTrained;
             Hunger = 20;

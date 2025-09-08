@@ -5,13 +5,18 @@ using System.Threading.Tasks;
 
 namespace Arv
 {
-    public class Retriever : Dog
+    public class Retriever(int age, int weight, int speed) : Dog(age, weight, speed)
     {
-        string retrievedItem = "";
-        public Retriever(int age, int weight, string species, string diet, int speed)
-        : base(age, weight, species, diet, speed)
+        private string retrievedItem = "";
+        public void Retrieve(string item)
         {
-
+            retrievedItem = item;
+            System.Console.WriteLine($"Fetched {item}!");
+        }
+        public void Drop()
+        {
+            System.Console.WriteLine($"Dropped {retrievedItem}!");
+            retrievedItem = "";
         }
     }
 }

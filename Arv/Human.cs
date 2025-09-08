@@ -7,6 +7,9 @@ namespace Arv
 {
     public class Human : Animal
     {
-        
+        public override void MakeSound()
+        {
+            System.Console.WriteLine("tja");
+        }
     }
 }

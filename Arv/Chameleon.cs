@@ -8,15 +8,14 @@ namespace Arv
 {
     public class Chameleon : Animal
     {
-        Color _color;
-        public Chameleon(int age, int weight, string species, string diet, int speed)
+        private Color _color;
+        public Chameleon(int age, int weight, int speed)
         {
             Age = age;
             Weight = weight;
-            Species = species;
-            Diet = diet;
+            Species = "Chamaeleonidae";
+            Diet = "Bugs";
             Speed = speed;
-            Hunger = 20;
         }
         public void ChangeColor(Color color)
         {

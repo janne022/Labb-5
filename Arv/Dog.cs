@@ -8,12 +8,12 @@ namespace Arv
     public class Dog : Animal
     {
 
-        public Dog(int age, int weight, string species, string diet, int speed)
+        public Dog(int age, int weight, int speed)
         {
             Age = age;
             Weight = weight;
-            Species = species;
-            Diet = diet;
+            Species = "Canis lupus familiaris";
+            Diet = "Dog Food";
             Speed = speed;
             Hunger = 20;
         }

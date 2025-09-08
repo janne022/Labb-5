@@ -5,14 +5,10 @@ using System.Threading.Tasks;
 
 namespace Arv
 {
-    public class Bulldog : Dog
+    public class Bulldog(int age, int weight, int speed) : Dog(age, weight, speed)
     {
-        int strength;
-        public Bulldog(int age, int weight, string species, string diet, int speed)
-        : base(age, weight, species, diet, speed)
-        {
+        readonly int strength;
 
-        }
         public void Guard()
         {
             System.Console.WriteLine($"Bites for {strength} damage!");
