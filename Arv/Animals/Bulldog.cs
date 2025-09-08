@@ -7,7 +7,7 @@ namespace Arv
 {
     public class Bulldog(int age, int weight, int speed) : Dog(age, weight, speed)
     {
-        readonly int strength;
+        readonly int strength = 8;
 
         public void Guard()
         {
