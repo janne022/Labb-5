@@ -14,7 +14,7 @@ namespace Arv
             Age = age;
             Weight = weight;
             Species = "Canis lupus familiaris";
-            Diet = "Dog Food";
+            Diet = new DogFood().Name;
             Speed = speed;
             Hunger = 20;
         }

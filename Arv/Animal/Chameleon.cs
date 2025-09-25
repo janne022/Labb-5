@@ -15,7 +15,7 @@ namespace Arv
             Age = age;
             Weight = weight;
             Species = "Chamaeleonidae";
-            Diet = "Bugs";
+            Diet = new Bugs.Name;
             Speed = speed;
         }
         public void ChangeColor(Color color)

@@ -14,7 +14,7 @@ namespace Arv
             Age = age;
             Weight = weight;
             Species = "Felidae";
-            Diet = "Canned Tuna";
+            Diet = new CannedTuna.Name;
             Speed = speed;
             _isLitterBoxTrained = isLitterBoxTrained;
             Hunger = 20;
