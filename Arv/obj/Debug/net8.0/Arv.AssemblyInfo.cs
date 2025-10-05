@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Arv")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c8221c573ef0cf4798fbfe4e154f43fbdb2936e1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67c243d029075b03eeb1789eb4e3b5380e8b18aa")]
 [assembly: System.Reflection.AssemblyProductAttribute("Arv")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Arv")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
