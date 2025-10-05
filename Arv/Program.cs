@@ -13,12 +13,13 @@ internal class Program
         Human human = new("Olle", 25, 70, 24);
 
         // Intitiate list with animal objects
-        List<Animal> animals = new List<Animal> { bulldog, retriever, cat, chameleon, human };
+        List<Animal> animals = [bulldog, retriever, cat, chameleon, human];
 
-        // Loop through all animals and use override method MakeSound()
+        // Loop through all animals and use abstract method MakeSound()
         foreach (var animal in animals)
         {
-            Console.WriteLine($"{}");
+            Console.Write($"{animal.Name} opens their mouth and makes a sound: ");
+            animal.MakeSound();
         }
 
         // Try out chameleon changing color method
