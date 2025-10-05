@@ -8,11 +8,11 @@ namespace Arv
     public abstract class Animal(string name, int age, int weight, int speed)
     {
         // Declare properties
-        public string? Name { get; set; } = name;
+        public string Name { get; set; } = name;
         public int Age { get; set; } = age;
         public int Weight { get; set; } = weight;
-        public string ?Species { get; protected set; }
-        public string ?Diet { get; protected set; }
+        public string? Species { get; protected set; };
+        public string? Diet { get; protected set; };
         public int Speed { get; set; } = speed;
         public int Hunger { get; protected set; } = 20;
 
