@@ -8,7 +8,7 @@ namespace Arv
 {
     public class Human : Animal
     {
-        // Defines properties and constructor
+        // Declare properties and constructor
         public string[] Languages { get; set; } = ["English", "Swedish"];
         public Human(string name, int age, int weight, int speed) : base(name, age, weight, speed)
         {

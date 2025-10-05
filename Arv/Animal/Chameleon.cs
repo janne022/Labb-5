@@ -15,7 +15,7 @@ namespace Arv
             Species = "Chamaeleonidae";
             Diet = new Bugs().Name;
         }
-        // Change 
+        // Method that changes Chameleon color based on input and prints that color to console
         public void ChangeColor(ConsoleColor color)
         {
             Color = color;
@@ -24,6 +24,7 @@ namespace Arv
             Console.WriteLine(Color.ToString());
             Console.ForegroundColor = ConsoleColor.White;
         }
+        // Implementation of MakeSound method
         public override void MakeSound()
         {
             System.Console.WriteLine("hiss");

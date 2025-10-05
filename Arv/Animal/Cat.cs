@@ -16,14 +16,15 @@ namespace Arv
             _isLitterBoxTrained = isLitterBoxTrained;
             Hunger = 20;
         }
+        // Method to write the cat purring in console
         public static void Purr()
         {
-            System.Console.WriteLine("prrrrrrr");
+            Console.WriteLine("prrrrrrr");
         }
-
+        // Implementation of MakeSound method
         public override void MakeSound()
         {
-            System.Console.WriteLine("meow");
+            Console.WriteLine("meow");
         }
     }
 }
