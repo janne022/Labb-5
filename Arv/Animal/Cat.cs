@@ -9,13 +9,10 @@ namespace Arv
     {
         // Defines properties and constructor for Cat class
         private bool _isLitterBoxTrained;
-        public Cat(int age, int weight, int speed, bool isLitterBoxTrained)
+        public Cat(string name, int age, int weight, int speed, bool isLitterBoxTrained) : base(name, age, weight, speed)
         {
-            Age = age;
-            Weight = weight;
             Species = "Felidae";
-            Diet = new CannedTuna.Name;
-            Speed = speed;
+            Diet = new CannedTuna().Name;
             _isLitterBoxTrained = isLitterBoxTrained;
             Hunger = 20;
         }

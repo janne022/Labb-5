@@ -9,18 +9,20 @@ namespace Arv
     public class Chameleon : Animal
     {
         // Defines properties and constructor for Chameleon class
-        private Color _color;
-        public Chameleon(int age, int weight, int speed)
+        public ConsoleColor Color { get; set; } = ConsoleColor.Green;
+        public Chameleon(string name, int age, int weight, int speed) : base(name, age, weight, speed)
         {
-            Age = age;
-            Weight = weight;
             Species = "Chamaeleonidae";
-            Diet = new Bugs.Name;
-            Speed = speed;
+            Diet = new Bugs().Name;
         }
-        public void ChangeColor(Color color)
+        // Change 
+        public void ChangeColor(ConsoleColor color)
         {
-            _color = color;
+            Color = color;
+            Console.Write($"{Name} slowly turns ");
+            Console.ForegroundColor = Color;
+            Console.WriteLine(Color.ToString());
+            Console.ForegroundColor = ConsoleColor.White;
         }
         public override void MakeSound()
         {

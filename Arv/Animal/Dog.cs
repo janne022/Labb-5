@@ -9,13 +9,10 @@ namespace Arv
     {
         // Defines properties and constructor for Dog class
 
-        public Dog(int age, int weight, int speed)
+        public Dog(string name, int age, int weight, int speed) : base(name, age, weight, speed)
         {
-            Age = age;
-            Weight = weight;
             Species = "Canis lupus familiaris";
             Diet = new DogFood().Name;
-            Speed = speed;
             Hunger = 20;
         }
         public override void MakeSound()

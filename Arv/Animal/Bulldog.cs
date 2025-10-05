@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 
 namespace Arv
 {
-    public class Bulldog(int age, int weight, int speed) : Dog(age, weight, speed)
+    public class Bulldog(string name, int age, int weight, int speed) : Dog(name, age, weight, speed)
     {
-        readonly int strength = 8;
+        private int _strength = 8;
 
         public void Guard()
         {
-            System.Console.WriteLine($"Bites for {strength} damage!");
+            System.Console.WriteLine($"Bites for {_strength} damage!");
         }
     }
 }

@@ -6,20 +6,27 @@ internal class Program
     private static void Main(string[] args)
     {
         // Initiate animals
-        Bulldog bulldog = new(age: 2, weight: 10, speed: 20);
-        Retriever retriever = new(age: 6, weight: 10, speed: 56);
-        Cat cat = new(age: 2, weight: 10, speed: 40, isLitterBoxTrained: true);
-        Chameleon chameleon = new(age: 1, weight: 2, speed: 5);
+        Bulldog bulldog = new("Pär", 2, 10, 20);
+        Retriever retriever = new("Buddy", 6, 10, 56);
+        Cat cat = new("Jiji", 2, 10, 40, true);
+        Chameleon chameleon = new("Stefan", 1, 2, 5);
+        Human human = new("Olle", 25, 70, 24);
 
-        // Try out methods
-        bulldog.MakeSound();
-        retriever.MakeSound();
-        cat.MakeSound();
-        chameleon.MakeSound();
-        chameleon.ChangeColor(color: Color.White);
+        // Intitiate list with animal objects
+        List<Animal> animals = new List<Animal> { bulldog, retriever, cat, chameleon, human };
 
-        Console.WriteLine(bulldog.Hunger);
+        // Loop through all animals and use override method MakeSound()
+        foreach (var animal in animals)
+        {
+            Console.WriteLine($"{}");
+        }
+
+        // Try out chameleon changing color method
+        chameleon.ChangeColor(color: ConsoleColor.Blue);
+
+        // Try feeding one of the dogs some dogfood
+        Console.WriteLine($"Giving {bulldog.Name} some dogfood. He is currently at {bulldog.Hunger} hunger.");
         bulldog.Eat(new DogFood());
-        Console.WriteLine(bulldog.Hunger);
+        Console.WriteLine($"{bulldog.Name} hunger is now at: {bulldog.Hunger}.");
     }
 }
